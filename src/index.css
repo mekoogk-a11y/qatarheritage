@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --qatar-maroon: #8A1538;
+    --qatar-maroon-dark: #4d0a1d;
+    --qatar-maroon-deep: #25040d;
+    --qatar-maroon-light: #ad1f49;
+    --qatar-gold: #D4AF37;
+    --qatar-sand: #EAD8B1;
+  }
+
+  html {
+    font-family: 'Tajawal', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  /* Custom modern scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1c1917;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #8A1538;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ad1f49;
+  }
+}
+
+.font-serif-ar {
+  font-family: 'Amiri', serif;
+}
+
+/* Glassmorphism subtle effects */
+.glass-panel {
+  background: rgba(26, 12, 17, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-maroon {
+  background: linear-gradient(135deg, rgba(138, 21, 56, 0.85) 0%, rgba(77, 10, 29, 0.9) 100%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* Leaflet map popup style overrides for dark theme and Arabic text */
+.leaflet-popup-content-wrapper {
+  background: #1f1b1c !important;
+  color: #f3f4f6 !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(138, 21, 56, 0.4) !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+  direction: rtl;
+  text-align: right;
+  font-family: 'Tajawal', sans-serif !important;
+}
+
+.leaflet-popup-tip {
+  background: #1f1b1c !important;
+}

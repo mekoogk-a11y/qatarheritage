@@ -1,0 +1,6 @@
+{
+  "name": "اكتشف قطر 🇶🇦",
+  "description": "منصة ثقافية وسياحية تفاعلية لاستكشاف تاريخ قطر ومدنها ومعالمها وتراثها ومتاحفها وخريطتها.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
